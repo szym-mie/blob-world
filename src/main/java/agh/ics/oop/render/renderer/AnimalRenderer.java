@@ -1,7 +1,6 @@
 package agh.ics.oop.render.renderer;
 
 import agh.ics.oop.entities.Animal;
-import agh.ics.oop.model.MapDirection;
 import agh.ics.oop.model.Vector2D;
 import agh.ics.oop.render.UnitRenderer;
 import agh.ics.oop.render.WorldRenderer;
@@ -9,7 +8,7 @@ import agh.ics.oop.render.image.ImageSampler;
 import agh.ics.oop.view.ViewLayer;
 
 public class AnimalRenderer implements UnitRenderer<Animal> {
-    private final ImageSampler[] frog;
+    private final ImageSampler blob;
     private final ImageSampler bar0;
     private final ImageSampler bar1;
     private final ImageSampler bar2;
@@ -17,23 +16,7 @@ public class AnimalRenderer implements UnitRenderer<Animal> {
     private final ImageSampler bar4;
 
     public AnimalRenderer(WorldRenderer renderer) {
-        String[] colors = new String[]{"blue", "cyan", "green", "orange", "purple", "red", "yellow"};
-
-        int choice = 3;
-
-        String color = colors[choice];
-
-        this.frog = new ImageSampler[]{
-                renderer.imageSamplerMap.getImageSampler(color + "_frog4"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog3"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog2"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog1"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog0"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog7"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog6"),
-                renderer.imageSamplerMap.getImageSampler(color + "_frog5")
-        };
-
+        this.blob = renderer.imageSamplerMap.getImageSampler("blob");
         this.bar0 = renderer.imageSamplerMap.getImageSampler("bar0");
         this.bar1 = renderer.imageSamplerMap.getImageSampler("bar1");
         this.bar2 = renderer.imageSamplerMap.getImageSampler("bar2");
@@ -44,7 +27,7 @@ public class AnimalRenderer implements UnitRenderer<Animal> {
     @Override
     public void render(WorldRenderer renderer, ViewLayer viewLayer, Animal element) {
         Vector2D position = element.getPosition();
-        renderer.view.putImageAtGrid(position, this.frog[element.getDirection().ordinal()], viewLayer);
+        renderer.view.putImageAtGrid(position, this.blob, viewLayer);
         ImageSampler bar = this.getEnergyBarImageSampler(element.getEnergy());
         renderer.view.putImageAtGrid(position, bar, viewLayer);
     }

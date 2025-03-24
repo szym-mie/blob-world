@@ -22,10 +22,10 @@ public class GroundRenderer implements UnitRenderer<Ground> {
         ImageSampler sand3 = renderer.imageSamplerMap.getImageSampler("sand3");
         ImageSampler sand4 = renderer.imageSamplerMap.getImageSampler("sand4");
 
-        ImageSampler poisonedSand1 = renderer.imageSamplerMap.getImageSampler("poisoned_sand1");
-        ImageSampler poisonedSand2 = renderer.imageSamplerMap.getImageSampler("poisoned_sand2");
-        ImageSampler poisonedSand3 = renderer.imageSamplerMap.getImageSampler("poisoned_sand3");
-        ImageSampler poisonedSand4 = renderer.imageSamplerMap.getImageSampler("poisoned_sand4");
+        ImageSampler poison1 = renderer.imageSamplerMap.getImageSampler("poison1");
+        ImageSampler poison2 = renderer.imageSamplerMap.getImageSampler("poison2");
+        ImageSampler poison3 = renderer.imageSamplerMap.getImageSampler("poison3");
+        ImageSampler poison4 = renderer.imageSamplerMap.getImageSampler("poison4");
 
         this.healthyFrameSamplerArray = new ImageSampler[]{
                 sand4, sand4, sand4, sand4,
@@ -35,10 +35,10 @@ public class GroundRenderer implements UnitRenderer<Ground> {
         };
 
         this.poisonedFrameSamplerArray = new ImageSampler[]{
-                poisonedSand4, poisonedSand4, poisonedSand4, poisonedSand4,
-                poisonedSand1, poisonedSand1, poisonedSand1, poisonedSand1,
-                poisonedSand3, poisonedSand3, poisonedSand2, poisonedSand2,
-                poisonedSand2, poisonedSand2, poisonedSand2, poisonedSand2
+                poison4, poison4, poison4, poison4,
+                poison1, poison1, poison1, poison1,
+                poison3, poison3, poison2, poison2,
+                poison2, poison2, poison2, poison2
         };
     }
 
