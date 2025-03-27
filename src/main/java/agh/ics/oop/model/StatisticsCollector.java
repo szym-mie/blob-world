@@ -3,7 +3,7 @@ package agh.ics.oop.model;
 import agh.ics.oop.entities.Animal;
 import agh.ics.oop.entities.AnimalFactory;
 import agh.ics.oop.entities.Plant;
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 
 import java.util.*;
 
@@ -101,7 +101,7 @@ public class StatisticsCollector implements ObjectEventListener<WorldMap>, Objec
     }
 
     private void collectPlantsCount() {
-        this.plantsCount.setValue(this.plants.values().size());
+        this.plantsCount.setValue(this.plants.size());
     }
 
     private void collectFreeSquaresCount() {

@@ -1,7 +1,7 @@
 package agh.ics.oop.render;
 
 import agh.ics.oop.model.Vector2D;
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 import org.jetbrains.annotations.NotNull;
 
 public abstract class Overlay implements Comparable<Overlay> {

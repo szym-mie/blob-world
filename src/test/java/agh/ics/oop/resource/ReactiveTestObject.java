@@ -1,6 +1,6 @@
 package agh.ics.oop.resource;
 
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 
 public class ReactiveTestObject {
     @Exported()

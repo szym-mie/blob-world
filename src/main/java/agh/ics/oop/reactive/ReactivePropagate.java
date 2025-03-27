@@ -1,4 +1,4 @@
-package agh.ics.oop.util;
+package agh.ics.oop.reactive;
 
 public enum ReactivePropagate {
     NONE,

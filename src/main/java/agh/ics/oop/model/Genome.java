@@ -2,10 +2,8 @@ package agh.ics.oop.model;
 
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 public class Genome {
-    // TODO
     private final float randomGenomeChangeChance;
     private final List<MoveDirection> geneList;
     private int activeGene;

@@ -5,11 +5,9 @@ import agh.ics.oop.loop.LoopController;
 import agh.ics.oop.util.ThreadManager;
 
 public class SimulationEngine implements ThreadManager {
-//    private final ExecutorService executorService;
     private final LoopController loopController;
 
     public SimulationEngine() {
-//        this.executorService = Executors.newFixedThreadPool(8);
         this.loopController = new LoopController(8);
     }
 
@@ -20,14 +18,7 @@ public class SimulationEngine implements ThreadManager {
         return simulation;
     }
 
-//    public Simulation run(WorldMap map) {
-//        Simulation simulation = new Simulation(map);
-//        executorService.submit(simulation);
-//        return simulation;
-//    }
-
     public void kill() {
-//        this.executorService.shutdown();
         this.loopController.kill();
     }
 }

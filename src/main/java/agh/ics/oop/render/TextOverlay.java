@@ -2,7 +2,7 @@ package agh.ics.oop.render;
 
 import agh.ics.oop.model.Vector2D;
 import agh.ics.oop.render.renderer.TextOverlayRenderer;
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 
 @AssignRenderer(renderer = TextOverlayRenderer.class)
 public abstract class TextOverlay extends Overlay {

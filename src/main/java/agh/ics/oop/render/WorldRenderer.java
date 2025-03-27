@@ -7,7 +7,7 @@ import agh.ics.oop.render.image.ImageAtlasSampler;
 import agh.ics.oop.render.image.ImageMap;
 import agh.ics.oop.render.image.ImageSampler;
 import agh.ics.oop.render.image.ImageSamplerMap;
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 import agh.ics.oop.view.View;
 import agh.ics.oop.view.ViewLayer;
 import javafx.application.Platform;

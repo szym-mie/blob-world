@@ -26,4 +26,5 @@ module Project.main {
 
     exports agh.ics.oop.window.controller to javafx.fxml;
     exports agh.ics.oop.view to javafx.graphics;
+    exports agh.ics.oop.reactive;
 }

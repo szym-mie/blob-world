@@ -1,5 +1,7 @@
 package agh.ics.oop.util;
 
+import agh.ics.oop.reactive.Reactive;
+import agh.ics.oop.reactive.ReactivePropagate;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -7,7 +9,7 @@ public class ReactiveTest {
     @Test
     public void testToString() {
         Reactive<String> reactive = new Reactive<>("hello");
-        Assert.assertEquals(reactive.toString(), "hello");
+        Assert.assertEquals("hello", reactive.toString());
     }
 
     @Test
@@ -20,7 +22,7 @@ public class ReactiveTest {
         reactive1.setValue(1);
 
 
-        Assert.assertEquals(reactive1.getValue().intValue(), 1);
-        Assert.assertEquals(reactive2.getValue().intValue(), 2);
+        Assert.assertEquals(1, reactive1.getValue().intValue());
+        Assert.assertEquals(2, reactive2.getValue().intValue());
     }
 }

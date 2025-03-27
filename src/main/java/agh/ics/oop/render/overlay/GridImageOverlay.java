@@ -5,7 +5,7 @@ import agh.ics.oop.render.AssignRenderer;
 import agh.ics.oop.render.ImageOverlay;
 import agh.ics.oop.render.WorldRenderer;
 import agh.ics.oop.render.renderer.GridImageOverlayRenderer;
-import agh.ics.oop.util.Reactive;
+import agh.ics.oop.reactive.Reactive;
 
 @AssignRenderer(renderer = GridImageOverlayRenderer.class)
 public class GridImageOverlay extends ImageOverlay {
